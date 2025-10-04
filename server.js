@@ -70,6 +70,10 @@ app.get('/admin', (req, res) => {
   res.sendFile(__dirname + '/confirm_participation.html');
 });
 
+
+app.get('/music', (req, res) => {
+  res.sendFile(__dirname + '/camcui.vn/congthanhwedding/file/music.mp3');
+});
 // API: get all guests
 app.get('/api/guests', (req, res) => {
   db.query('SELECT * FROM guests ORDER BY created_at DESC', (err, results) => {
