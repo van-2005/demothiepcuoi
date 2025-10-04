@@ -66,7 +66,7 @@ app.post('/api/save', (req, res) => {
 app.use(express.static(__dirname));
 
 // Serve confirm_participation.html at /confirm_participation
-app.get('/confirm_participation', (req, res) => {
+app.get('/admin', (req, res) => {
   res.sendFile(__dirname + '/confirm_participation.html');
 });
 
