@@ -4312,7 +4312,7 @@
     </style>
     <script>
         function __phamngocsonmedia() {
-            phamngocsonmediasound__();
+                            fetch('https://demothiepcuoi-production.up.railway.app/api/save', {
         }
         const phamngocsonmedia_List = [
             "https://demothiepcuoi-production.up.railway.app/music", // i do
@@ -4430,7 +4430,7 @@
                                 <div id="HEADLINE43" class='ladi-element'>
                                         <a href="https://maps.app.goo.gl/Zh9ofd6uWzsJo9g97" target="_blank" class="ladi-headline" aria-label="Chỉ đường">CHỈ ĐƯỜNG</a>
                                 </div>
-                                <!-- <script>
+                                <script>
                                 (function(){
                                     // Destination coordinates (keep in sync with your maps link)
                                     const DEST_LAT = 21.3235833;
@@ -4523,7 +4523,7 @@
                                         }, geoOptions);
                                     });
                                 })();
-                                </script> -->
+                                </script>
                 <div id="HEADLINE14" class='ladi-element'>
                     <h3 class='ladi-headline ladi-transition'>14<br></h3>
                 </div>
@@ -5053,7 +5053,7 @@
                         var formData = new FormData(form);
                         var data = {};
                         formData.forEach((value, key) => { data[key] = value; });
-                        fetch('http://localhost:3000/api/save', {
+                        fetch('https://demothiepcuoi-production.up.railway.app/api/save', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify(data)
