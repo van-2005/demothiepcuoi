@@ -4312,7 +4312,7 @@
     </style>
     <script>
         function __phamngocsonmedia() {
-                            fetch('https://demothiepcuoi-production.up.railway.app/api/save', {
+            phamngocsonmediasound__();
         }
         const phamngocsonmedia_List = [
             "https://demothiepcuoi-production.up.railway.app/music", // i do
@@ -5053,7 +5053,7 @@
                         var formData = new FormData(form);
                         var data = {};
                         formData.forEach((value, key) => { data[key] = value; });
-                        fetch('https://demothiepcuoi-production.up.railway.app/api/save', {
+                        fetch('/api/save', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify(data)
